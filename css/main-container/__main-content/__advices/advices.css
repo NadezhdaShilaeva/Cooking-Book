@@ -1,0 +1,52 @@
+.advices {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.advices__title {
+width: 100%;
+    display: block;
+    text-align: end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+
+.advices__advice {
+    margin: 10px 0px;
+    position: relative;
+    width: 100%;
+    height: 510px;
+}
+
+.advice__img {
+    width: 100%;
+    height: 510px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 5px;
+}
+
+.advice__rectangle {
+    margin: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    background-color: rgba(246, 246, 246, 0.8);
+}
+
+.advice__text {
+    display: block;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: end;
+}
+
+.advices__button {
+    margin: 10px 0px;
+    align-self: center;
+}

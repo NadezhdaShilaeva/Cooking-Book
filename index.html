@@ -3,282 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header-navigation.css">
+    <link rel="stylesheet" href="css/header-bg.css">
+    <link rel="stylesheet" href="css/main-container/main-container.css">
+    <link rel="stylesheet" href="css/main-container/__searching/searching.css">
+    <link rel="stylesheet" href="css/main-container/__main-content/main-content.css">
+    <link rel="stylesheet" href="css/main-container/__main-content/__resipes/recipes.css">
+    <link rel="stylesheet" href="css/main-container/__main-content/__advices/advices.css">
+    <link rel="stylesheet" href="css/footer-container.css">
     <link rel="shortcut icon" href="/images/logo/favicon.png" type="image/png">
     <title>Рецепты здоровых и полезных блюд</title>
     <meta name="description" content="Рецепты простых в приготовлении, вкусных, здоровых и полезных блюд с пошаговым описанием процесса их приготовления и изображениями готовых блюд.">
     <meta name="keywords" content="рецепты, блюда, готовка, еда, полезно, вкусно, быстро, просто, здоровье, пошаговые рецепты, кулинарные рецепты, изображения блюд, картинки блюд">
 </head>
-<body>
+<body class="body">
     <header>
-        <div class="header-container">
-            <div class="logotype">
-                <img class="logo-img" src="images/logo/logotype.png" width="20%" alt="Logotype">
+        <div class="header-navigation">
+            <div class="center-container">
+                <div class="header-container">
+                    <div class="header-container__logotype logotype">
+                        <a class="logotype__link" href="">
+                            <img class="logotype__img" src="images/logo/logotype.png" alt="Logotype">
+                        </a>
+                    </div>
+                    <nav class="header-container__menu menu">
+                        <ul class="header-container__menu-list menu-list">
+                            <li class="header-container__menu-item menu-item">
+                                <a class="menu-link" href="#">
+                                    <img  class="menu-item__icon" src="images/icons/bookmark.png" alt="Favourites">
+                                    <p class="menu-item__text">Мои любимые рецепты</p>
+                                </a>
+                            </li>
+                            <li class="header-container__menu-item menu-item">
+                                <a class="menu-link" href="#">
+                                    <img class="menu-item__icon" src="images/icons/add-recipe.png" alt="Add-recipe">
+                                    <p class="menu-item__text">Поделиться рецептом</p>
+                                </a>
+                            </li>
+                            <li class="header-container__menu-item menu-item">
+                                <a class="menu-link" href="#">
+                                    <img class="menu-item__icon" src="images/icons/home.png" alt="User">
+                                    <p class="menu-item__text">Войти</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">
-                            <img src="images/icons/favourites.png" width="2%" alt="Favourites">
-                            Мои любимые рецепты
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">
-                            <img src="images/icons/add-recipe.png" width="2%" alt="Add-recipe">
-                            Поделиться своим рецептом
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">
-                            <img src="images/icons/home.png" width="2%" alt="User">
-                            Войти
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
-    </header>
-    <main>
-        <div class="main-container">
-            <div class="main-img">
-                <img class="healthy-products-img" src="images\main-header\healthy-products2.webp" width="80%" alt="healthy-products">
-                <h1 class="slogan">
+        <div class="header-bg">
+            <img class="header-bg__img" src="images\header\healthy-products2.webp" alt="healthy-products">
+            <div class="header-bg__rectangle">
+                <h1 class="header-bg__slogan">
                     <b><em>Полезно &mdash; значит вкусно!</em></b>
                 </h1>
             </div>
-            <section class="searching">
-                <div class="catalog">
-                    <a class="menu-burger" href="#">
-                        <img src="images/icons/menu-burger.png" width="2%" alt="Menu-burger">
-                    </a>
-                    <h3>
-                        <b>Категории блюд:</b>
-                    </h3>
-                    <ul class="catalog-list">
-                        <li class="catalog-item">
-                            <a class="catalog-link" href="#">
-                                Закуски
+        </div>
+    </header>
+    <main>
+        <div class="main-offset_empty"></div>
+        <div class="main-container">
+            <div class="center-container">
+                <section class="main-container__serching serching">
+                    <div class="searching__first-row">
+                        <div class="serching__catalog catalog">
+                            <a class="catalog__menu-burger">
+                                <img src="images/icons/menu-burger.png" alt="Menu-burger">
                             </a>
-                        </li>
-                        <li class="catalog-item">
-                            <a class="catalog-link" href="#">
-                                Салаты
-                            </a>
-                        </li>
-                        <li class="catalog-item">
-                            <a class="catalog-link" href="#">
-                                Супы
-                            </a>
-                        </li>
-                        <li class="catalog-item">
-                            <a class="catalog-link" href="#">
-                                Рыбные блюда
-                            </a>
-                        </li>
-                        <li class="catalog-item">
-                            <a class="catalog-link" href="#">
-                                Мясные блюда
-                            </a>
-                        </li>
-                        <li class="catalog-item">
-                            <a class="catalog-link" href="#">
-                                Гарниры
-                            </a>
-                        </li>
-                        <li class="catalog-item">
-                            <a class="catalog-link" href="#">
-                                Десерты
-                            </a>
-                        </li>
-                        <li class="catalog-item">
-                            <a class="catalog-link" href="#">
-                                Напитки
-                            </a>
-                        </li>
-                        <li class="catalog-item">
-                            <a class="catalog-link" href="#">
-                                Детское меню
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="search-box">
-                    <div class="search-input">
-                        <input type="text" placeholder="Найти рецепт по названию">
+                            <div class="catalog__description">
+                                <h3 class="catalog__header">
+                                    <b>Категории блюд:</b>
+                                </h3>
+                                <ul class="catalog__category-list">
+                                    <li class="catalog__category-item">
+                                        <a class="catalog__link" href="#">
+                                            Закуски
+                                        </a>
+                                    </li>
+                                    <li class="catalog__category-item">
+                                        <a class="catalog__link" href="#">
+                                            Салаты
+                                        </a>
+                                    </li>
+                                    <li class="catalog__category-item">
+                                        <a class="catalog__link" href="#">
+                                            Супы
+                                        </a>
+                                    </li>
+                                    <li class="catalog__category-item">
+                                        <a class="catalog__link" href="#">
+                                            Рыбные блюда
+                                        </a>
+                                    </li>
+                                    <li class="catalog__category-item">
+                                        <a class="catalog__link" href="#">
+                                            Мясные блюда
+                                        </a>
+                                    </li>
+                                    <li class="catalog__category-item">
+                                        <a class="catalog__link" href="#">
+                                            Гарниры
+                                        </a>
+                                    </li>
+                                    <li class="catalog__category-item">
+                                        <a class="catalog__link" href="#">
+                                            Десерты
+                                        </a>
+                                    </li>
+                                    <li class="catalog__category-item">
+                                        <a class="catalog__link" href="#">
+                                            Напитки
+                                        </a>
+                                    </li>
+                                    <li class="catalog__category-item">
+                                        <a class="catalog__link" href="#">
+                                            Детское меню
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="searching__search-box search-box input-box">
+                            <input class="search-box__input" type="text" placeholder="Найти рецепт по названию">
+                            <button class="search-box__button">
+                                <img class="search-box__button-img" src="images/icons/search.png" alt="Search">
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="search-by-parameters">
-                    <h2>
-                        <b>Задать свои параметры блюда:</b>
-                    </h2>
-                    <ul class="parameters-list">
-                        <li class="parameters-item">
-                            <p>
-                                Категория:<br>
-                                <input tupe="text" placeholder="Любая категория">
-                            </p>
-                        </li>
-                        <li class="parameters-item">
-                            <p>
-                                Ингредиенты:<br>
-                                <input tupe="text" placeholder="Любые ингредиенты">
-                            </p>
-                        </li>
-                        <li class="parameters-item">
-                            <p>
-                                Время приготовления:<br>
-                                <input tupe="text" placeholder="Любое время">
-                            </p>
-                        </li>
-                    </ul>
-                    <div class="search-by-parameters-submit">
-                        <input type="submit" value="Подобрать рецепты">
-                    </div>
-                </div>
-            </section>
-            <section class="recipes-selection">
-                <h1 class="recipes-selection-header">
-                    <b>Подборка лучших рецептов</b>
-                </h1>
-                <div class="recipe" href="#">
-                    <a class="recipe-img" href="#">
-                        <img src="images/recipes-img/buckwheat.jpg" width="30%" alt="Buckwheat">
-                    </a>
-                    <div class="recipe-description">
-                        <a class="recipe-name" href="#">
-                            <h2>
-                                Гречневая каша на воде
-                            </h2>
-                        </a>
-                        <p>
-                            <img src="images/icons/category.png" width="2%" alt="Category">
-                            Гарниры
-                        </p>
-                        <p>
-                            <img src="images/icons/clock.png" width="2%" alt="Time">
-                            15 мин
-                        </p>
-                        <p>
-                            <img src="images/icons/heart.png" width="2%" alt="Likes">
-                            1051
+                    <div class="searching__search-by-parameters search-by-par">
+                        <h2 class="search-by-par__title main-container__header2">
+                            <b>Задать свои параметры блюда:</b>
+                        </h2>
+                        <ul class="search-by-par__parameters-list">
+                            <li class="search-by-par__parameters-item parameter">
+                                <p class="parameter__title">
+                                    Категория:
+                                </p>
+                                <div class="parameter__box input-box">
+                                    <input class="parameter__input" tupe="text" placeholder="Любая категория">
+                                </div>
+                            </li>
+                            <li class="search-by-par__parameters-item">
+                                <p class="parameter__title">
+                                    Ингредиенты:
+                                </p>
+                                <div class="parameter__box input-box">
+                                    <input class="parameter__input" tupe="text" placeholder="Любые ингредиенты">
+                                </div>
+                            </li>
+                            <li class="search-by-par__parameters-item">
+                                <p class="parameter__title">
+                                    Время приготовления:
+                                </p>
+                                <div class="parameter__box input-box">
+                                    <input class="parameter__input" tupe="text" placeholder="Любое время">
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="search-by-par__button button">
+                            <p>Подобрать рецепты</p>
                         </p>
                     </div>
+                </section>
+                <div class="main-container__main-content main-content">
+                    <section class="main-content__recipes recipes">
+                        <h1 class="recipes__title">
+                            <b>Подборка лучших рецептов</b>
+                        </h1>
+                        <div class="recipes__container">
+                            <div class="recipes__recipe recipe">
+                                <a class="recipe__link" href="#">
+                                    <img class="recipe__img" src="images/recipes-img/buckwheat.jpg" alt="Buckwheat">
+                                </a>
+                                <div class="recipe__description">
+                                    <a class="recipe__name" href="#">
+                                        <h2 class="main-container__header2">
+                                            Гречневая каша на воде
+                                        </h2>
+                                    </a>
+                                    <div class="recipe__category recipe-addition">
+                                        <img class="recipe-addition__icon" src="images/icons/category.png" alt="Category">
+                                        <p class="recipe-addition__text">Гарниры</p>
+                                    </div>
+                                    <div class="recipe__time recipe-addition">
+                                        <img class="recipe-addition__icon" src="images/icons/clock.png" alt="Time">
+                                        <p class="recipe-addition__text">15 мин</p>
+                                    </div>
+                                    <div class="recipe__favourite recipe-addition">
+                                        <img class="recipe-addition__icon" src="images/icons/heart.png" alt="Likes">
+                                        <p class="recipe-addition__text">1051</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recipes__recipe recipe">
+                                <a class="recipe__link" href="#">
+                                    <img class="recipe__img" src="images/recipes-img/salad.webp" alt="Buckwheat">
+                                </a>
+                                <div class="recipe__description">
+                                    <a class="recipe__name" href="#">
+                                        <h2 class="main-container__header2">
+                                            Салат "Витаминный" из капусты и моркови
+                                        </h2>
+                                    </a>
+                                    <div class="recipe__category recipe-addition">
+                                        <img class="recipe-addition__icon" src="images/icons/category.png" alt="Category">
+                                        <p class="recipe-addition__text">Салаты</p>
+                                    </div>
+                                    <div class="recipe__time recipe-addition">
+                                        <img class="recipe-addition__icon" src="images/icons/clock.png" alt="Time">
+                                        <p class="recipe-addition__text">10 мин</p>
+                                    </div>
+                                    <div class="recipe__favourite recipe-addition">
+                                        <img class="recipe-addition__icon" src="images/icons/heart.png" alt="Likes">
+                                        <p class="recipe-addition__text">1044</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recipes__recipe recipe">
+                                <a class="recipe__link" href="#">
+                                    <img class="recipe__img" src="images/recipes-img/borsch.webp" alt="Buckwheat">
+                                </a>
+                                <div class="recipe__description">
+                                    <a class="recipe__name" href="#">
+                                        <h2 class="main-container__header2">
+                                            Борщ классический со свёклой и говядиной
+                                        </h2>
+                                    </a>
+                                    <div class="recipe__category recipe-addition">
+                                        <img class="recipe-addition__icon" src="images/icons/category.png" alt="Category">
+                                        <p class="recipe-addition__text">Супы</p>
+                                    </div>
+                                    <div class="recipe__time recipe-addition">
+                                        <img class="recipe-addition__icon" src="images/icons/clock.png" alt="Time">
+                                        <p class="recipe-addition__text">1 ч 20 мин</p>
+                                    </div>
+                                    <div class="recipe__favourite recipe-addition">
+                                        <img class="recipe-addition__icon" src="images/icons/heart.png" alt="Likes">
+                                        <p class="recipe-addition__text">1015</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="recipes__button button">
+                                <p>Показать больше</p>
+                            </button>
+                        </div>
+                    </section>
+                    <aside class="main-content__advices advices">
+                        <h2 class="advices__title main-container__header2">
+                            <b>Полезные мини-советы</b>
+                        </h2>
+                        <div class="advices__advice">
+                            <img class="advice__img" src="images/advices-img/olive oil.jpg" alt="Olive oil">
+                            <div class="advice__rectangle">
+                                <p class="advice__text">    
+                                    Оливковое масло оказывает благоприятное воздействие на сердечно-сосудистую систему, нормализует давление, снижает уровень холестерина и повышает эластичность кожи.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advices__advice">
+                            <img class="advice__img" src="images/advices-img/omega3.jpg" alt="Water">                            
+                            <div class="advice__rectangle"> 
+                                <p class="advice__text">
+                                    Продукты, богатые омега-3: лосось, сельдь, устрицы, сардины, говядина, шпинат, чечевица, тофу.
+                                </p>                  
+                            </div>
+                        </div>
+                        <div class="advices__advice"> 
+                            <img class="advice__img" src="images/advices-img/vegetables.jpg" alt="Vegetables">                           
+                            <div class="advice__rectangle"> 
+                                <p class="advice__text">
+                                    Внесите разнообразие в вашу кишечную микрофлору. Регулярно заменяйте одни виды фруктов и овощей на другие.
+                                </p>                   
+                            </div>
+                        </div>
+                        <button class="advices__button button">
+                            <p>Показать больше</p>
+                        </button>
+                    </aside>
                 </div>
-                <div class="recipe">
-                    <a class="recipe-img" href="#">
-                        <img src="images/recipes-img/salad.webp" width="30%" alt="Buckwheat">
-                    </a>
-                    <div class="recipe-description">
-                        <a class="recipe-name" href="#">
-                            <h2>
-                                Салат "Витаминный" из капусты и моркови
-                            </h2>
-                        </a>
-                        <p>
-                            <img src="images/icons/category.png" width="2%" alt="Category">
-                            Салаты
-                        </p>
-                        <p>
-                            <img src="images/icons/clock.png" width="2%" alt="Time">
-                            10 мин
-                        </p>
-                        <p>
-                            <img src="images/icons/heart.png" width="2%" alt="Likes">
-                            1044
-                        </p>
-                    </div>
-                </div>
-                <div class="recipe">
-                    <a class="recipe-img" href="#">
-                        <img src="images/recipes-img/borsch.webp" width="30%" alt="Buckwheat">
-                    </a>
-                    <div class="recipe-description">
-                        <a class="recipe-name" href="#">
-                            <h2>
-                                Борщ классический со свёклой и говядиной
-                            </h2>
-                        </a>
-                        <p>
-                            <img src="images/icons/category.png" width="2%" alt="Category">
-                            Супы
-                        </p>
-                        <p>
-                            <img src="images/icons/clock.png" width="2%" alt="Time">
-                            1ч 20 мин
-                        </p>
-                        <p>
-                            <img src="images/icons/heart.png" width="2%" alt="Likes">
-                            1015
-                        </p>
-                    </div>
-                </div>
-                <div class="recipes-show-more">
-                    <input type="button" value="Показать больше">
-                </div>
-            </section>
-            <aside class="healthy-advices">
-                <h1>
-                    <b>Полезные мини-советы</b>
-                </h1>
-                <div class="advice">
-                    <p>
-                        <img src="images/advices-img/olive oil.jpg" width="20%" alt="Olive oil"><br>
-                        Оливковое масло оказывает благоприятное воздействие на сердечно-сосудистую систему, нормализует давление, снижает уровень холестерина и повышает эластичность кожи.
-                    </p>
-                </div>
-                <div class="advice">
-                    <p>                        
-                        <img src="images/advices-img/omega3.jpg" width="20%" alt="Water"><br>
-                        Продукты, богатые омега-3: лосось, сельдь, устрицы, сардины, говядина, шпинат, чечевица, тофу.
-
-                    </p>
-                </div>
-                <div class="advice">
-                    <p>                        
-                        <img src="images/advices-img/vegetables.jpg" width="20%" alt="Vegetables"><br>
-                        Внесите разнообразие в вашу кишечную микрофлору. Регулярно заменяйте одни виды фруктов и овощей на другие.
-                    </p>
-                </div>
-                <div class="advices-show-more">
-                    <input type="button" value="Показать больше">
-                </div>
-            </aside>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="contacts">
-            <div class="contacts-text">
-                <p class="contacts-text-header">
-                    <i>С заботой о Вашем здоровье:</i>
-                </p>
-                <p class="contacts-section-item">
-                    &copy; &quot;HealthyFood&quot;, 2023
-                </p>
-                <p class="contacts-section-item">
-                    Официиальный представитель: Шиляева Надежда Сергеевна
-                </p>
-                <p class="contacts-section-item">
-                    Телефон: +7 (922) 521-61-51
-                </p>
-                <p class="contacts-section-item">
-                    E-mail: shilaeva5nadya@mail.ru
-                </p>
-            </div>
-            <div class="contacts-lables">
-                <div class="contacts-lables-item">
-                    <a class="contacts-lables-link" href="https://t.me/NadezhdaShilaeva">
-                        <img src="images/footer-icons/telegram-icon.png" width="2.6%" alt="Telegram">
-                    </a>
-                </div>                
-                <div class="contacts-lables-item">
-                    <a class="contacts-lables-link" href="https://vk.com/id146617368">
-                        <img src="images/footer-icons/vk-icon.png" width="2.5%"  alt="VK">
-                    </a>
-                </div>                
-                <div class="contacts-lables-item">
-                    <a class="contacts-lables-link" href="https://wa.me/qr/UCTXNQEMSXOWD1">
-                        <img src="images/footer-icons/whatsapp-icon.png" width="2.6%" alt="WhatsApp">
-                    </a>
+        <div class="footer-container">
+            <div class="center-container">
+                <div class="footer-container__contacts contacts">
+                    <div class="contacts__text">
+                        <p class="contacts__header">
+                            <i>С заботой о Вашем здоровье:</i>
+                        </p>
+                        <p class="contacts__item">
+                            &copy; &quot;HealthyFoodBook&quot;, 2023
+                        </p>
+                        <p class="contacts__item">
+                            Официиальный представитель:
+                        </p>
+                        <p class="contacts__item">
+                            Шиляева Надежда Сергеевна
+                        </p>
+                        <p class="contacts__item">
+                            Телефон: +7 (922) 521-61-51
+                        </p>
+                        <p class="contacts__item">
+                            E-mail: shilaeva5nadya@mail.ru
+                        </p>
+                    </div>
+                    <div class="contacts__lables contact-lables">
+                        <div class="contact-lables__item">
+                            <a class="contact-lables__link" href="https://t.me/NadezhdaShilaeva">
+                                <img class="contact-lables__img" src="images/footer-icons/telegram-icon.png" alt="Telegram">
+                            </a>
+                        </div>                
+                        <div class="contact-lables__item">
+                            <a class="contact-lables__link" href="https://vk.com/id146617368">
+                                <img class="contact-lables__img" src="images/footer-icons/vk-icon.png" alt="VK">
+                            </a>
+                        </div>                
+                        <div class="contact-lables__item">
+                            <a class="contact-lables__link" href="https://wa.me/qr/UCTXNQEMSXOWD1">
+                                <img class="contact-lables__img" src="images/footer-icons/whatsapp-icon.png" alt="WhatsApp">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
