@@ -14,3 +14,15 @@
     line-height: 30px;
     font-weight: 700;
 }
+
+@media (max-width: 770px) {
+    .main-container__header2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 440px) {
+    .main-container {
+        width: 440px;
+    }
+}
