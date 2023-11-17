@@ -67,6 +67,7 @@
 
 .login-form__registration:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .login-form__button {

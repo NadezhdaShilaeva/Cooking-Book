@@ -4,8 +4,7 @@
 }
 
 .recipes__container {
-    width: 1000px;
-    display: flex;
+        display: flex;
     flex-direction: column;
 }
 
@@ -37,8 +36,8 @@
 }
 
 .recipe__img {
-    height: 300px;
-    width: 400px;
+    height: inherit;
+    width: inherit;
     object-fit: cover;
     object-position: center;
 }
@@ -95,8 +94,6 @@
 .recipes__button {
     margin: 10px 0px;
     align-self: center;
-<<<<<<< Updated upstream
-=======
 }
 
 .recipe__favourite .recipe-addition__icon {
@@ -146,5 +143,4 @@
     .recipe__favourite {
         margin-top: auto;
     }
->>>>>>> Stashed changes
 }

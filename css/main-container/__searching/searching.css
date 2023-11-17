@@ -1,8 +1,6 @@
 .searching {
     position: relative;
-    left: 200px;
-    top: 800px;
-}
+    }
 
 .searching__first-row {
     display: flex;
@@ -136,6 +134,10 @@
     background: none;
 }
 
+.search-box__button:hover {
+    cursor: pointer;
+}
+
 .search-box__button-img {
     width: 36px;
     line-height: 30px;
@@ -161,11 +163,38 @@
     align-self: center;
 }
 
+@media (max-width: 935px) {
+    .searching__first-row {
+        column-gap: 5px;
+    }
+    .search-by-par__parameters-list {
+        column-gap: 10px;
+    }
+}
+
 .search-by-par__parameters-item {
     list-style: none;
     display: flex;
     flex-direction: column;
     width: 33.333%;
+}
+
+@media (max-width: 850px) {
+    .search-by-par__parameters-list {
+        flex-direction: column;
+    }
+    .search-by-par__parameters-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+    .catalog__menu-burger img {
+        width: 30px;
+    }
+    .search-box__button-img {
+        width: 30px;
+    }
 }
 
 .parameter__title {
@@ -178,25 +207,6 @@
     align-self: flex-end;
 }
 
-<<<<<<< Updated upstream
-.button {
-    display: inline-block;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30px;
-    color: #f6f6f6;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(63, 97, 42);
-}
-
-.button:hover {    
-    background-color: rgba(63, 97, 42, 0.7);
-    transition-duration: 0.25s;
-=======
 @media (max-width: 770px) {
     .search-box__input {
         font-size: 16px;
@@ -207,5 +217,4 @@
     .parameter__title {
         font-size: 18px;
     }
->>>>>>> Stashed changes
 }

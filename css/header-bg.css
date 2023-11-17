@@ -11,7 +11,7 @@
     left: 0px;
     right: 0px;
     top: 0px;
-    width: 100%;
+    width: 1960px;
     height: auto;
 }
 
@@ -32,4 +32,41 @@
     font-style: italic;
     text-align: left;
     letter-spacing: 0.09em;
+}
+
+@media (max-width: 1250px) {
+    .header-bg__img {
+        width: 1500px;
+
+    }
+    .header-bg__rectangle {
+        left: 70px;
+        top: 200px;
+    }
+    .header-bg__slogan {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-bg__rectangle {
+        left: 50px;
+    }
+    .header-bg__slogan {
+        letter-spacing: initial;
+    }
+}
+
+@media (max-width: 770px) {
+    .header-bg__img {
+        width: 1000px;
+    }
+    .header-bg__rectangle {
+        top:120px;
+        width:300px;
+        padding: 20px;
+    }
+    .header-bg__slogan {
+        font-size: 30px;
+    }
 }

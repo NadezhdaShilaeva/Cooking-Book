@@ -6,11 +6,7 @@
     left: 0px;
     right: 0px;
     top: 0px;
-<<<<<<< Updated upstream
-    z-index: 100;
-=======
     z-index: 2;
->>>>>>> Stashed changes
     background: linear-gradient(170deg, rgb(63, 97, 42) 20%, rgba(138, 166, 121, 0.9) 99%);
 }
 
@@ -23,7 +19,38 @@
     padding: 15px 0px;
     display: flex;
     justify-content: space-between;
-    column-gap: 100px;
+    column-gap: 70px;
+}
+
+@media (max-width: 1540px) {
+    .center-container {
+        width: 1000px;
+    }
+    .header-navigation .center-container {
+        width: 100%;
+        padding: 0px;
+    }
+    .header-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .center-container {
+        width: 100%;
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 440px) {
+    .header-navigation {
+        overflow:auto;
+    }
+
+    .header-navigation::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
 }
 
 .header-container__logotype {
@@ -72,6 +99,24 @@
     color: #f6f6f6;
     font-size: 18px;
     font-weight: 400;
+}
+
+@media (max-width: 1210px) {
+    .menu-item__text {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    .logotype__img {
+        width: 150px;
+    }
+    .menu-item__icon {
+        width: 30px;
+    }
+    .menu-list {
+        column-gap: 5px;
+    }
 }
 
 .menu-item:hover {
