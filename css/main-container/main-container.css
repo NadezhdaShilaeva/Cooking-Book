@@ -13,4 +13,30 @@
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+<<<<<<< Updated upstream
+=======
+}
+
+.main-container__title {
+    padding: 30px 0px 50px 20px;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 700; 
+}
+
+@media (max-width: 770px) {
+    .main-container__header2 {
+        font-size: 22px;
+    }
+    .main-container__title {
+        font-size: 24px;
+        padding: 20px 0px 20px 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .main-container {
+        width: 440px;
+    }
+>>>>>>> Stashed changes
 }

@@ -67,12 +67,32 @@
     padding: 10px 10px 10px 30px;
 }
 
+.catalog__category-item .active {
+    background-color: rgba(138, 166, 121, 0.2);
+    border-radius: 10px;
+    padding: 10px 10px 10px 15px;
+}
+
+/*.catalog__category-item .active::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3F612A;
+    display: inline-block;
+    vertical-align: center;
+    margin-right: 10px;
+}*/
+
 .catalog__link {
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
     color: #3F612A;
     white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .catalog__link:hover {
@@ -154,33 +174,11 @@
     line-height: 30px;
 }
 
-.parameter__box {
-    margin: 10px 0px;
-    border: 2px solid #3F612A;
-    border-radius: 10px;
-    background-color: #f6f6f6;
-    display: flex;
-    align-items: center;
-}
-
-.parameter__input {
-    margin: 10px;
-    outline: none;
-    border: none;
-    width: 100%;
-    min-width: 200px;
-    font-family: inherit;
-    color: #3F612A; 
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    background-color: transparent;
-}
-
 .search-by-par__button {
     align-self: flex-end;
 }
 
+<<<<<<< Updated upstream
 .button {
     display: inline-block;
     border: none;
@@ -198,4 +196,16 @@
 .button:hover {    
     background-color: rgba(63, 97, 42, 0.7);
     transition-duration: 0.25s;
+=======
+@media (max-width: 770px) {
+    .search-box__input {
+        font-size: 16px;
+        line-height: 22px;
+        min-width: 250px;
+        margin: 0px 10px;
+    }
+    .parameter__title {
+        font-size: 18px;
+    }
+>>>>>>> Stashed changes
 }

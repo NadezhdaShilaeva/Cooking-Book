@@ -8,21 +8,13 @@
     <link rel="stylesheet" href="css/header-bg.css">
     <link rel="stylesheet" href="css/main-container/main-container.css">
     <link rel="stylesheet" href="css/main-container/__searching/searching.css">
-    <link rel="stylesheet" href="css/main-container/__searching/__parameter/parameter__select.css">
-    <link rel="stylesheet" href="css/main-container/__searching/__parameter/parameter__box.css">
-    <link rel="stylesheet" href="css/main-container/button.css">
     <link rel="stylesheet" href="css/main-container/__main-content/main-content.css">
     <link rel="stylesheet" href="css/main-container/__main-content/__resipes/recipes.css">
-    <link rel="stylesheet" href="css/main-container/__main-content/__advices/advices.css">
+    <link rel="stylesheet" href="css/main-container/__main-content/__catalog/catalog.css">
+    <link rel="stylesheet" href="css/main-container/button.css">
     <link rel="stylesheet" href="css/footer-container.css">
-<<<<<<< Updated upstream
-    <link rel="shortcut icon" href="/images/logo/favicon.png" type="image/png">
-    <title>Рецепты здоровых и полезных блюд</title>
-=======
-    <script src="js/page_load.js"></script>
     <link rel="shortcut icon" href="/images/logo/favicon.png?" type="image/png">
-    <title>Рецепты здоровых и полезных блюд - HealthyFoodBook</title>
->>>>>>> Stashed changes
+    <title>Мои любимые рецепты - HealthyFoodBook</title>
     <meta name="description" content="Рецепты простых в приготовлении, вкусных, здоровых и полезных блюд с пошаговым описанием процесса их приготовления и изображениями готовых блюд.">
     <meta name="keywords" content="рецепты, блюда, готовка, еда, полезно, вкусно, быстро, просто, здоровье, пошаговые рецепты, кулинарные рецепты, изображения блюд, картинки блюд">
 </head>
@@ -73,154 +65,32 @@
     <main>
         <div class="main-offset_empty"></div>
         <div class="main-container">
-            <div class="center-container">
+            <div class="center-container">                
+                <h1 class="main-container__title my-recipes">
+                    <b>Мои любимые рецепты</b>
+                </h1>
                 <section class="main-container__serching serching">
                     <div class="searching__first-row">
                         <div class="serching__catalog catalog">
-                            <div class="catalog__menu-burger">
+                            <a class="catalog__menu-burger">
                                 <img src="images/icons/menu-burger.png" alt="Menu-burger">
-                            </div>
+                            </a>
                             <div class="catalog__description">
                                 <h3 class="catalog__header">
                                     <b>Категории блюд:</b>
                                 </h3>
-                                <ul class="catalog__category-list">
-                                    <li class="catalog__category-item">
-                                        <a class="catalog__link">
-                                            Закуски
-                                        </a>
-                                    </li>
-                                    <li class="catalog__category-item">
-                                        <a class="catalog__link">
-                                            Салаты
-                                        </a>
-                                    </li>
-                                    <li class="catalog__category-item">
-                                        <a class="catalog__link">
-                                            Супы
-                                        </a>
-                                    </li>
-                                    <li class="catalog__category-item">
-                                        <a class="catalog__link">
-                                            Рыбные блюда
-                                        </a>
-                                    </li>
-                                    <li class="catalog__category-item">
-                                        <a class="catalog__link">
-                                            Мясные блюда
-                                        </a>
-                                    </li>
-                                    <li class="catalog__category-item">
-                                        <a class="catalog__link">
-                                            Гарниры
-                                        </a>
-                                    </li>
-                                    <li class="catalog__category-item">
-                                        <a class="catalog__link">
-                                            Десерты
-                                        </a>
-                                    </li>
-                                    <li class="catalog__category-item">
-                                        <a class="catalog__link">
-                                            Напитки
-                                        </a>
-                                    </li>
-                                    <li class="catalog__category-item">
-                                        <a class="catalog__link">
-                                            Детское меню
-                                        </a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                        <div class="searching__search-box search-box input-box">
+                        <div id="search-box-without-burger" class="searching__search-box search-box input-box">
                             <input class="search-box__input" type="text" placeholder="Найти рецепт по названию">
                             <button class="search-box__button">
                                 <img class="search-box__button-img" src="images/icons/search.png" alt="Search">
                             </button>
                         </div>
                     </div>
-                    <div class="searching__search-by-parameters search-by-par">
-                        <h2 class="search-by-par__title main-container__header2">
-                            <b>Задать свои параметры блюда:</b>
-                        </h2>
-                        <ul class="search-by-par__parameters-list">
-                            <li class="search-by-par__parameters-item parameter">
-                                <p class="parameter__title">
-                                    Категория:
-                                </p>
-                                <div class="form-item__box parameter__box input-box" data-state="">
-                                    <div class="parameter__input parameter__select" data-state="">
-                                        <div class="select__title">Любая категория</div>
-                                        <div class="parameter__options">
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="snacks" type="radio">
-                                                Закуски
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="salads" type="radio">
-                                                Салаты
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="soups" type="radio">
-                                                Супы
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="fish" type="radio">
-                                                Рыбные блюда
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="meat" type="radio">
-                                                Мясные блюда
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="garnish" type="radio">
-                                                Гарниры
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="desserts" type="radio">
-                                                Десерты
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="drinks" type="radio">
-                                                Напитки
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="kids-menu" type="radio">
-                                                Детское меню
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <img class="parameter__icon" src="images/icons/angle-down.png">
-                                </div>
-                            </li>
-                            <li class="search-by-par__parameters-item">
-                                <p class="parameter__title">
-                                    Ингредиенты:
-                                </p>
-                                <div class="parameter__box input-box">
-                                    <input class="parameter__input" type="text" placeholder="Любые ингредиенты">
-                                </div>
-                            </li>
-                            <li class="search-by-par__parameters-item">
-                                <p class="parameter__title">
-                                    Время приготовления:
-                                </p>
-                                <div class="parameter__box input-box">
-                                    <input class="parameter__input" type="text" placeholder="Любое время">
-                                </div>
-                            </li>
-                        </ul>
-                        <button class="search-by-par__button button">
-                            <p>Подобрать рецепты</p>
-                        </button>
-                    </div>
                 </section>
                 <div class="main-container__main-content main-content">
                     <section class="main-content__recipes recipes">
-                        <h1 class="recipes__title">
-                            <b>Подборка лучших рецептов</b>
-                        </h1>
                         <div class="recipes__container">
                             <div class="recipes__recipe recipe">
                                 <a class="recipe__link" href="#">
@@ -299,37 +169,59 @@
                             </button>
                         </div>
                     </section>
-                    <aside class="main-content__advices advices">
-                        <h2 class="advices__title main-container__header2">
-                            <b>Полезные мини-советы</b>
-                        </h2>
-                        <div class="advices__advice">
-                            <img class="advice__img" src="images/advices-img/olive oil.jpg" alt="Olive oil">
-                            <div class="advice__rectangle">
-                                <p class="advice__text">    
-                                    Оливковое масло оказывает благоприятное воздействие на сердечно-сосудистую систему, нормализует давление, снижает уровень холестерина и повышает эластичность кожи.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="advices__advice">
-                            <img class="advice__img" src="images/advices-img/omega3.jpg" alt="Water">                            
-                            <div class="advice__rectangle"> 
-                                <p class="advice__text">
-                                    Продукты, богатые омега-3: лосось, сельдь, устрицы, сардины, говядина, шпинат, чечевица, тофу.
-                                </p>                  
-                            </div>
-                        </div>
-                        <div class="advices__advice"> 
-                            <img class="advice__img" src="images/advices-img/vegetables.jpg" alt="Vegetables">                           
-                            <div class="advice__rectangle"> 
-                                <p class="advice__text">
-                                    Внесите разнообразие в вашу кишечную микрофлору. Регулярно заменяйте одни виды фруктов и овощей на другие.
-                                </p>                   
-                            </div>
-                        </div>
-                        <button class="advices__button button">
-                            <p>Показать больше</p>
-                        </button>
+                    <aside class="main-content__catalog">
+                        <h3 class="catalog__header">
+                            <b>Найти по категории:</b>
+                        </h3>
+                        <template>
+                            <ul class="catalog__category-list">
+                                <li class="catalog__category-item">
+                                    <a class="catalog__link">
+                                        Закуски
+                                    </a>
+                                </li>
+                                <li class="catalog__category-item">
+                                    <a class="catalog__link">
+                                        Салаты
+                                    </a>
+                                </li>
+                                <li class="catalog__category-item">
+                                    <a class="catalog__link">
+                                        Супы
+                                    </a>
+                                </li>
+                                <li class="catalog__category-item">
+                                    <a class="catalog__link">
+                                        Рыбные блюда
+                                    </a>
+                                </li>
+                                <li class="catalog__category-item">
+                                    <a class="catalog__link">
+                                        Мясные блюда
+                                    </a>
+                                </li>
+                                <li class="catalog__category-item">
+                                    <a class="catalog__link">
+                                        Гарниры
+                                    </a>
+                                </li>
+                                <li class="catalog__category-item">
+                                    <a class="catalog__link">
+                                        Десерты
+                                    </a>
+                                </li>
+                                <li class="catalog__category-item">
+                                    <a class="catalog__link">
+                                        Напитки
+                                    </a>
+                                </li>
+                                <li class="catalog__category-item">
+                                    <a class="catalog__link">
+                                        Детское меню
+                                    </a>
+                                </li>
+                            </ul>
+                        </template>
                     </aside>
                 </div>
             </div>
@@ -347,7 +239,7 @@
                             &copy; &quot;HealthyFoodBook&quot;, 2023
                         </p>
                         <p class="contacts__item">
-                            Официиальный представитель:
+                            Официальный представитель:
                         </p>
                         <p class="contacts__item">
                             Шиляева Надежда Сергеевна
@@ -381,7 +273,7 @@
         </div>
     </footer>
     <script src="js/header-navigation.js"></script>
-    <script src="js/parameter__select.js"></script>
+    <script src="js/catalog_template.js"></script>
     <script src="js/recipe.js"></script>
 </body>
 </html>
