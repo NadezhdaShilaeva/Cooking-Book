@@ -1,8 +1,9 @@
-let currentLink = location.pathname.substring(1);
+let currentLink = location.pathname;
+let currentPath = currentLink.substring(currentLink.lastIndexOf('/') + 1);
 
 document.querySelectorAll('.menu-link').forEach(item => {
     let linkHref = item.getAttribute('href');
-    if (currentLink === linkHref) {
+    if (currentPath === linkHref) {
         item.classList.add('active');
     }
 });
