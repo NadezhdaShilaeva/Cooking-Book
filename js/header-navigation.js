@@ -1,4 +1,4 @@
-let currentLink = location.pathname;
+let currentLink = location.pathname.substring(1);
 
 document.querySelectorAll('.menu-link').forEach(item => {
     let linkHref = item.getAttribute('href');
