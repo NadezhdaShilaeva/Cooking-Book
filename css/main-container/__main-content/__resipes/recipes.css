@@ -4,16 +4,23 @@
 }
 
 .recipes__container {
-        display: flex;
+    display: flex;
     flex-direction: column;
 }
 
-.recipes__title {
-    padding-left: 20px;
-    padding-bottom: 20px;
-    font-size: 30px;
-    line-height: 50px;
-    font-weight: 700; 
+.recipes__container[data-state='load'] {
+    .button {
+        display: none;
+    }
+    .preloader {
+        display: block;
+    }
+}
+
+.recipes__container[data-state='error'] {
+    .error-message {
+        display: block;
+    }
 }
 
 .recipes__recipe {

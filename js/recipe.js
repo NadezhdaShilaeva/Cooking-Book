@@ -1,4 +1,4 @@
-function changeImg(event) {
+export function changeImg(event) {
     let elem = event.target;
     let imgHeart = 'images/icons/heart.png';
     let imgHeartFull = 'images/icons/heart_full.png'

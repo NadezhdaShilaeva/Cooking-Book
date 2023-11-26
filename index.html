@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/main-container/__main-content/main-content.css">
     <link rel="stylesheet" href="css/main-container/__main-content/__resipes/recipes.css">
     <link rel="stylesheet" href="css/main-container/__main-content/__advices/advices.css">
+    <link rel="stylesheet" href="css/main-container/preloader.css">
+    <link rel="stylesheet" href="css/main-container/error-message.css">
     <link rel="stylesheet" href="css/main-container/__table/table.css">
     <link rel="stylesheet" href="css/footer-container.css">
     <script src="js/page_load.js"></script>
@@ -222,7 +224,7 @@
                         <h1 class="recipes__title">
                             <b>Подборка лучших рецептов</b>
                         </h1>
-                        <div class="recipes__container">
+                        <div class="recipes__container" data-state="">
                             <div class="recipes__recipe recipe">
                                 <a class="recipe__link" href="#">
                                     <img class="recipe__img" src="images/recipes-img/buckwheat.jpg" alt="Buckwheat">
@@ -294,6 +296,37 @@
                                         <p class="recipe-addition__text">1015</p>
                                     </div>
                                 </div>
+                            </div>
+                            <template id="recipe">
+                                <div class="recipes__recipe recipe">
+                                    <a class="recipe__link" href="#">
+                                        <img class="recipe__img" alt="Recipe_img">
+                                    </a>
+                                    <div class="recipe__description">
+                                        <a class="recipe__name" href="#">
+                                            <h2 class="main-container__header2"></h2>
+                                        </a>
+                                        <div class="recipe__category recipe-addition">
+                                            <img class="recipe-addition__icon" src="images/icons/category.png" alt="Category">
+                                            <p class="recipe-addition__text"></p>
+                                        </div>
+                                        <div class="recipe__time recipe-addition">
+                                            <img class="recipe-addition__icon" src="images/icons/clock.png" alt="Time">
+                                            <p class="recipe-addition__text"></p>
+                                        </div>
+                                        <div class="recipe__favourite recipe-addition">
+                                            <img class="recipe-addition__icon" src="images/icons/heart.png" alt="Likes">
+                                            <p class="recipe-addition__text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                            <div class="preloader">
+                                <img class="preloader__image" src="images/preloader/Spin.gif">
+                            </div>
+                            <div class="error-message">
+                                <p>⚠ Что-то пошло не так</p>
+                                <p>Попробуйте еще раз</p>
                             </div>
                             <button class="recipes__button button">
                                 <p>Показать больше</p>
@@ -466,8 +499,9 @@
         </div>
     </footer>
     <script src="js/header-navigation.js"></script>
-    <script type="module" src="js/parameter__select.js"></script>
-    <script src="js/recipe.js"></script>
     <script src="js/enter_prevent_default.js"></script>
+    <script type="module" src="js/parameter__select.js"></script>
+    <script type="module" src="js/recipe.js"></script>
+    <script type="module" src="js/recipes_load.js"></script>
 </body>
 </html>
