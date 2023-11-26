@@ -81,12 +81,12 @@
                                 </h3>
                             </div>
                         </div>
-                        <div id="search-box-without-burger" class="searching__search-box search-box input-box">
-                            <input class="search-box__input" type="text" placeholder="Найти рецепт по названию">
-                            <button class="search-box__button">
+                        <form action="#" id="search-box-without-burger" class="searching__search-box search-box input-box">
+                            <input class="search-box__input" type="text" name="search" placeholder="Найти рецепт по названию" autocomplete="off">
+                            <button class="search-box__button" type="submit">
                                 <img class="search-box__button-img" src="images/icons/search.png" alt="Search">
                             </button>
-                        </div>
+                        </form>
                     </div>
                 </section>
                 <div class="main-container__main-content main-content">
@@ -275,5 +275,6 @@
     <script src="js/header-navigation.js"></script>
     <script src="js/catalog_template.js"></script>
     <script src="js/recipe.js"></script>
+    <script src="js/enter_prevent_default.js"></script>
 </body>
 </html>

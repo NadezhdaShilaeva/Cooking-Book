@@ -19,6 +19,12 @@
     font-size: 18px;
     font-weight: 400;
     background-color: transparent;
+    border-radius: 10px;
+}
+
+.input-box:focus-within {
+    content: "";
+    box-shadow: 0 0 20px 1px rgba(138, 166, 121, 0.3);    
 }
 
 @media (max-width: 770px) {

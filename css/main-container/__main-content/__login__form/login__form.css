@@ -6,6 +6,9 @@
     background-color: rgba(138, 166, 121, 0.2);
     border-radius: 10px;
     display: flex;
+    &form {
+        display: flex;
+    }
 }
 
 @media (max-width: 1210px) {
@@ -15,7 +18,7 @@
     }
 }
 
-.login-form__column {
+.login-form__column, .login-form form {
     flex-grow: 1;
     display: flex;
     flex-direction: column;

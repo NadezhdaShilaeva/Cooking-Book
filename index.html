@@ -129,14 +129,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="searching__search-box search-box input-box">
-                            <input class="search-box__input" type="text" placeholder="Найти рецепт по названию">
-                            <button class="search-box__button">
+                        <form class="searching__search-box search-box input-box">
+                            <input class="search-box__input" type="text" name="search" placeholder="Найти рецепт по названию" autocomplete="off">
+                            <button class="search-box__button" type="submit">
                                 <img class="search-box__button-img" src="images/icons/search.png" alt="Search">
                             </button>
-                        </div>
+                        </form>
                     </div>
-                    <div class="searching__search-by-parameters search-by-par">
+                    <form action="#" method="get" class="searching__search-by-parameters search-by-par">
                         <h2 class="search-by-par__title main-container__header2">
                             <b>Задать свои параметры блюда:</b>
                         </h2>
@@ -147,44 +147,28 @@
                                 </p>
                                 <div class="form-item__box parameter__box input-box" data-state="">
                                     <div class="parameter__input parameter__select" data-state="">
-                                        <div class="select__title">Любая категория</div>
+                                        <div class="select__title" data-default="Любая категория">Любая категория</div>
                                         <div class="parameter__options">
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="snacks" type="radio">
-                                                Закуски
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="salads" type="radio">
-                                                Салаты
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="soups" type="radio">
-                                                Супы
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="fish" type="radio">
-                                                Рыбные блюда
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="meat" type="radio">
-                                                Мясные блюда
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="garnish" type="radio">
-                                                Гарниры
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="desserts" type="radio">
-                                                Десерты
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="drinks" type="radio">
-                                                Напитки
-                                            </label>
-                                            <label class="parameter__option">
-                                                <input class="parameter__choice" name="kids-menu" type="radio">
-                                                Детское меню
-                                            </label>
+                                            <label class="parameter__option" for="any">Любая категория</label>
+                                            <input class="parameter__choice" id="any" value="any" type="radio" name="category" checked>
+                                            <label class="parameter__option" for="snacks">Закуски</label>
+                                            <input class="parameter__choice" id="snacks" value="snacks" type="radio" name="category">
+                                            <label class="parameter__option" for="salads">Салаты</label>
+                                            <input class="parameter__choice" id="salads" value="salads" type="radio" name="category">
+                                            <label class="parameter__option" for="soups">Супы</label>
+                                            <input class="parameter__choice" id="soups" value="soups" type="radio" name="category">
+                                            <label class="parameter__option" for="fish">Рыбные блюда</label>
+                                            <input class="parameter__choice" id="fish" value="fish" type="radio" name="category">
+                                            <label class="parameter__option" for="meat">Мясные блюда</label>
+                                            <input class="parameter__choice" id="meat" value="meat" type="radio" name="category">
+                                            <label class="parameter__option" for="garnish">Гарниры</label>
+                                            <input class="parameter__choice" id="garnish" value="garnish" type="radio" name="category">
+                                            <label class="parameter__option" for="desserts">Десерты</label>
+                                            <input class="parameter__choice" id="desserts" value="desserts" type="radio" name="category">
+                                            <label class="parameter__option" for="drinks">Напитки</label>
+                                            <input class="parameter__choice" id="drinks" value="drinks" type="radio" name="category">
+                                            <label class="parameter__option" for="kids">Детское меню</label>
+                                            <input class="parameter__choice" id="kids" value="kids" type="radio" name="category">
                                         </div>
                                     </div>
                                     <img class="parameter__icon" src="images/icons/angle-down.png">
@@ -195,22 +179,43 @@
                                     Ингредиенты:
                                 </p>
                                 <div class="parameter__box input-box">
-                                    <input class="parameter__input" type="text" placeholder="Любые ингредиенты">
+                                    <input class="parameter__input" type="text" name="ingredients" placeholder="Любые ингредиенты" autocomplete="off">
                                 </div>
                             </li>
                             <li class="search-by-par__parameters-item">
                                 <p class="parameter__title">
                                     Время приготовления:
                                 </p>
-                                <div class="parameter__box input-box">
-                                    <input class="parameter__input" type="text" placeholder="Любое время">
+                                <div class="form-item__box parameter__box input-box" data-state="">
+                                    <div class="parameter__input parameter__select" data-state="">
+                                        <div class="select__title" data-default="Любое время">Любое время</div>
+                                        <div class="parameter__options">
+                                            <label class="parameter__option" for="any">Любое время</label>
+                                            <input class="parameter__choice" id="any" value="any" type="radio" name="time" checked>
+                                            <label class="parameter__option" for="30min">Менее 30 минут</label>
+                                            <input class="parameter__choice" id="30min" value="30min" type="radio" name="time">
+                                            <label class="parameter__option" for="60min">Менее 60 минут</label>
+                                            <input class="parameter__choice" id="60min" value="60min" type="radio" name="time">
+                                            <label class="parameter__option" for="90min">Менее 90 минут</label>
+                                            <input class="parameter__choice" id="90min" value="90min" type="radio" name="time">
+                                            <label class="parameter__option" for="2h">Менее 2 часов</label>
+                                            <input class="parameter__choice" id="2h" value="2h" type="radio" name="time">
+                                            <label class="parameter__option" for="3h">Менее 3 часов</label>
+                                            <input class="parameter__choice" id="3h" value="3h" type="radio" name="time">
+                                            <label class="parameter__option" for="5h">Менее 5 часов</label>
+                                            <input class="parameter__choice" id="5h" value="5h" type="radio" name="time">
+                                            <label class="parameter__option" for="12h">Менее 12 часов</label>
+                                            <input class="parameter__choice" id="12h" value="12h" type="radio" name="time">
+                                        </div>
+                                    </div>
+                                    <img class="parameter__icon" src="images/icons/angle-down.png">
                                 </div>
                             </li>
                         </ul>
-                        <button class="search-by-par__button button">
+                        <button class="search-by-par__button button" type="submit">
                             <p>Подобрать рецепты</p>
                         </button>
-                    </div>
+                    </form>
                 </section>
                 <div class="main-container__main-content main-content">
                     <section class="main-content__recipes recipes">
@@ -299,38 +304,38 @@
                         <h2 class="advices__title main-container__header2">
                             <b>Полезные мини-советы</b>
                         </h2>
-<div class="advices__list">
-                        <div class="advices__advice">
-                            <img class="advice__img" src="images/advices-img/olive oil.jpg" alt="Olive oil">
-                            <div class="advice__rectangle">
-                                <p class="advice__text">    
-                                    Оливковое масло оказывает благоприятное воздействие на сердечно-сосудистую систему, нормализует давление, снижает уровень холестерина и повышает эластичность кожи.
-                                </p>
+                        <div class="advices__list">
+                            <div class="advices__advice">
+                                <img class="advice__img" src="images/advices-img/olive oil.jpg" alt="Olive oil">
+                                <div class="advice__rectangle">
+                                    <p class="advice__text">    
+                                        Оливковое масло оказывает благоприятное воздействие на сердечно-сосудистую систему, нормализует давление, снижает уровень холестерина и повышает эластичность кожи.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="advices__advice">
+                                <img class="advice__img" src="images/advices-img/omega3.jpg" alt="Water">                            
+                                <div class="advice__rectangle"> 
+                                    <p class="advice__text">
+                                        Продукты, богатые омега-3: лосось, сельдь, устрицы, сардины, говядина, шпинат, чечевица, тофу.
+                                    </p>                  
+                                </div>
+                            </div>
+                            <div class="advices__advice"> 
+                                <img class="advice__img" src="images/advices-img/vegetables.jpg" alt="Vegetables">                           
+                                <div class="advice__rectangle"> 
+                                    <p class="advice__text">
+                                        Внесите разнообразие в вашу кишечную микрофлору. Регулярно заменяйте одни виды фруктов и овощей на другие.
+                                    </p>                   
+                                </div>
                             </div>
                         </div>
-                        <div class="advices__advice">
-                            <img class="advice__img" src="images/advices-img/omega3.jpg" alt="Water">                            
-                            <div class="advice__rectangle"> 
-                                <p class="advice__text">
-                                    Продукты, богатые омега-3: лосось, сельдь, устрицы, сардины, говядина, шпинат, чечевица, тофу.
-                                </p>                  
-                            </div>
-                        </div>
-                        <div class="advices__advice"> 
-                            <img class="advice__img" src="images/advices-img/vegetables.jpg" alt="Vegetables">                           
-                            <div class="advice__rectangle"> 
-                                <p class="advice__text">
-                                    Внесите разнообразие в вашу кишечную микрофлору. Регулярно заменяйте одни виды фруктов и овощей на другие.
-                                </p>                   
-                            </div>
-                        </div>
-</div>
                         <button class="advices__button button">
                             <p>Показать больше</p>
                         </button>
                     </aside>
                 </div>
-<div class="main-container__table table">
+                <div class="main-container__table table">
                     <h2 class="table__title main-container__header2">
                         <b>Таблица калорийности (на 100 г продукта)</b>
                     </h2>
@@ -461,7 +466,8 @@
         </div>
     </footer>
     <script src="js/header-navigation.js"></script>
-    <script src="js/parameter__select.js"></script>
+    <script type="module" src="js/parameter__select.js"></script>
     <script src="js/recipe.js"></script>
+    <script src="js/enter_prevent_default.js"></script>
 </body>
 </html>

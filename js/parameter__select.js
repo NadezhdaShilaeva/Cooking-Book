@@ -1,11 +1,12 @@
-const select = document.querySelector('.parameter__select');
-const selectBox = select.parentNode;
-const selectTitle = select.querySelector('.select__title');
-const selectOptions = select.querySelectorAll('.parameter__option');
+const selectors = document.querySelectorAll('.parameter__select');
+const selectOptions = document.querySelectorAll('.parameter__option');
 
-select.addEventListener('click', changeState);
+selectors.forEach(select => {select.addEventListener('click', changeState);});
 
-function changeState() {
+function changeState(event) {
+    let select = event.target;
+    let selectBox = select.parentNode;
+
     if ('active' === select.dataset.state) {
       select.setAttribute('data-state', '');
       selectBox.setAttribute('data-state', '');
@@ -22,8 +23,16 @@ for (let i = 0; i < selectOptions.length; i++) {
 
 function changeOption(event) {
     event.stopPropagation();
-    if (event.target.matches('label')) {
-        selectTitle.textContent = event.target.textContent.trim();
+    changeSelectTitle(event.target);    
+}
+
+export function changeSelectTitle(targetElemetnt) {
+    let select = targetElemetnt.parentNode.parentNode;
+    let selectBox = select.parentNode;
+    let selectTitle = select.querySelector('.select__title');
+
+    if (targetElemetnt.matches('label')) {
+        selectTitle.textContent = targetElemetnt.textContent.trim();
         selectTitle.style.color = '#3F612A';
         select.setAttribute('data-state', '');
         selectBox.setAttribute('data-state', '');
@@ -31,14 +40,21 @@ function changeOption(event) {
 }
 
 document.addEventListener('click', (event) => {
-    if (event.target !== select) {
+    selectors.forEach(select => {
+      if (event.target !== select) {
         select.setAttribute('data-state', '');
-        selectBox.setAttribute('data-state', '');
-    }
+        select.parentNode.setAttribute('data-state', '');
+      }
+    });
 });
 
-/* Reset title
 const reset = document.querySelector('.reset');
-reset.addEventListener('click', () => {
-  selectTitle.textContent = selectTitle.getAttribute('data-default');
-});*/
+if (reset !== null) {
+  reset.addEventListener('click', () => {
+      selectors.forEach(select => {
+        let selectTitle = select.querySelector('.select__title');
+        selectTitle.textContent = selectTitle.getAttribute('data-default');
+        selectTitle.style.color = '';
+      });
+  });
+}

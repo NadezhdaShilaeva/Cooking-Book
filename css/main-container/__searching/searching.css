@@ -40,7 +40,7 @@
     border-top: none;
     border-radius: 5px;
     box-shadow: 0 0 20px 1px rgba(138, 166, 121, 0.5);
-    z-index: 1;
+    z-index: 2;
 }
 
 .serching__catalog:hover .catalog__description {
