@@ -333,7 +333,7 @@
                             </button>
                         </div>
                     </section>
-                    <aside class="main-content__advices advices">
+                    <aside class="main-content__advices advices" data-state="">
                         <h2 class="advices__title main-container__header2">
                             <b>Полезные мини-советы</b>
                         </h2>
@@ -362,6 +362,21 @@
                                     </p>                   
                                 </div>
                             </div>
+                            <template id="advice">
+                                <div class="advices__advice"> 
+                                    <img class="advice__img" alt="Advice">                           
+                                    <div class="advice__rectangle"> 
+                                        <p class="advice__text"></p>                   
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                        <div class="preloader">
+                            <img class="preloader__image" src="images/preloader/Spin.gif">
+                        </div>
+                        <div class="error-message">
+                            <p>⚠ Что-то пошло не так</p>
+                            <p>Попробуйте еще раз</p>
                         </div>
                         <button class="advices__button button">
                             <p>Показать больше</p>
@@ -503,5 +518,6 @@
     <script type="module" src="js/parameter__select.js"></script>
     <script type="module" src="js/recipe.js"></script>
     <script type="module" src="js/recipes_load.js"></script>
+    <script src="js/advices_load.js"></script>
 </body>
 </html>

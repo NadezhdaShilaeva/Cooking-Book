@@ -5,6 +5,21 @@ width: 470px;
     flex-direction: column;
 }
 
+.advices[data-state='load'] {
+    .button {
+        display: none;
+    }
+    .preloader {
+        display: block;
+    }
+}
+
+.advices[data-state='error'] {
+    .error-message {
+        display: block;
+    }
+}
+
 .advices__title {
 width: 100%;
     display: block;
@@ -30,6 +45,7 @@ width: 100%;
 }
 
 .advice__rectangle {
+    width: calc(100% - 20px);
     margin: 10px;
     position: absolute;
     left: 0px;

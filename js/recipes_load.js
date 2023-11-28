@@ -40,6 +40,6 @@ function drawRecipes(jsonRecipes) {
 }
 
 function handleError(error) {
-    console.error("Ошибка:", error);
+    console.error("Ошибка: ", error);
     document.querySelector('.recipes__container').setAttribute('data-state', 'error');
 }
