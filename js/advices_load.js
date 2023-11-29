@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.advices__button').addEventListener('click', loadAdvices);
-})
+document.querySelector('.advices__button').addEventListener('click', loadAdvices);
 
 async function loadAdvices() {
     document.querySelector('.advices').setAttribute('data-state', 'load');

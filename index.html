@@ -2,7 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css"
+    integrity="sha512-pTaEn+6gF1IeWv3W1+7X7eM60TFu/agjgoHmYhAfLEU8Phuf6JKiiE8YmsNC0aCgQv4192s4Vai8YZ6VNM6vyQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main-container/__searching/__parameter/selectize-input.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header-navigation.css">
     <link rel="stylesheet" href="css/header-bg.css">
@@ -181,7 +188,28 @@
                                     Ингредиенты:
                                 </p>
                                 <div class="parameter__box input-box">
-                                    <input class="parameter__input" type="text" name="ingredients" placeholder="Любые ингредиенты" autocomplete="off">
+                                    <select id="multi-select" name="ingredients" multiple="multiple">
+                                        <option value="avocado">Авокадо</option> 
+                                        <option value="orange">Апельсин</option>
+                                        <option value="lingonberry">Брусника</option>
+                                        <option value="basil">Базилик</option>
+                                        <option value="bananas">Бананы</option> 
+                                        <option value="lamb-fillet">Баранина (филе)</option>
+                                        <option value="broccoli">Брокколи</option>
+                                        <option value="broth">Бульон мясной</option>
+                                        <option value="grapes">Виноград</option>
+                                        <option value="water">Вода</option>
+                                        <option value="goose">Гусь</option>
+                                        <option value="carnation">Гвоздика</option>
+                                        <option value="hercules">Геркулес</option>
+                                        <option value="beef-soup">Говядина (суповой набор)</option> 
+                                        <option value="beef-fillet">Говядина (филе)</option>
+                                        <option value="buckwheat">Гречневая крупа</option>
+                                        <option value="value1">Value1</option> 
+                                        <option value="value2">Value2</option>
+                                        <option value="value3">Value3</option>
+                                        <option value="value5">Value5</option>
+                                    </select>
                                 </div>
                             </li>
                             <li class="search-by-par__parameters-item">
@@ -519,5 +547,13 @@
     <script type="module" src="js/recipe.js"></script>
     <script type="module" src="js/recipes_load.js"></script>
     <script src="js/advices_load.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"
+    integrity="sha512-IOebNkvA/HZjMM7MxL0NYeLYEalloZ8ckak+NDtOViP7oiYzG5vn6WVXyrJDiJPhl4yRdmNAG49iuLmhkUdVsQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/multi-select.js"></script>
 </body>
 </html>

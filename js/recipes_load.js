@@ -1,8 +1,6 @@
 import { changeImg } from './recipe.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.recipes__button').addEventListener('click', loadRecipes);
-})
+document.querySelector('.recipes__button').addEventListener('click', loadRecipes);
 
 async function loadRecipes() {
     document.querySelector('.recipes__container').setAttribute('data-state', 'load');
