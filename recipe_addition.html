@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header-navigation.css">
+    <link rel="stylesheet" href="css/header-bg.css">
+    <link rel="stylesheet" href="css/main-container/main-container.css">
+    <link rel="stylesheet" href="css/main-container/__main-content/main-content.css">
+    <link rel="stylesheet" href="css/main-container/__searching/__parameter/parameter__select.css">
+    <link rel="stylesheet" href="css/main-container/__searching/__parameter/parameter__box.css">
+    <link rel="stylesheet" href="css/main-container/__main-content/__addition-form/addition-form.css">
+    <link rel="stylesheet" href="css/main-container/__main-content/__recipe/__ingredients__wrapper.css">
+    <link rel="stylesheet" href="css/main-container/button.css">
+    <link rel="stylesheet" href="css/footer-container.css">
+    <link rel="shortcut icon" href="images/logo/favicon.png?" type="image/png">
+    <title>Поделиться рецептом - HealthyFoodBook</title>
+    <meta name="description" content="Рецепты простых в приготовлении, вкусных, здоровых и полезных блюд с пошаговым описанием процесса их приготовления и изображениями готовых блюд.">
+    <meta name="keywords" content="рецепты, блюда, готовка, еда, полезно, вкусно, быстро, просто, здоровье, пошаговые рецепты, кулинарные рецепты, изображения блюд, картинки блюд">
+</head>
+<body class="body">
+    <header>
+        <div class="header-navigation">
+            <div class="center-container">
+                <div class="header-container">
+                    <div class="header-container__logotype logotype">
+                        <a class="logotype__link" href="index.html">
+                            <img class="logotype__img" src="images/logo/logotype.png" alt="Logotype">
+                        </a>
+                    </div>
+                    <nav class="header-container__menu menu">
+                        <ul class="header-container__menu-list menu-list">
+                            <li class="header-container__menu-item menu-item">
+                                <a class="menu-link" href="my_recipes.html">
+                                    <img  class="menu-item__icon" src="images/icons/bookmark.png" alt="Favourites">
+                                    <p class="menu-item__text">Мои любимые рецепты</p>
+                                </a>
+                            </li>
+                            <li class="header-container__menu-item menu-item">
+                                <a class="menu-link" href="recipe_addition.html">
+                                    <img class="menu-item__icon" src="images/icons/add-recipe.png" alt="Add-recipe">
+                                    <p class="menu-item__text">Поделиться рецептом</p>
+                                </a>
+                            </li>
+                            <li class="header-container__menu-item menu-item">
+                                <a class="menu-link" href="entrance.html">
+                                    <img class="menu-item__icon" src="images/icons/home.png" alt="User">
+                                    <p class="menu-item__text">Войти</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header-bg">
+            <img class="header-bg__img" src="images\header\healthy-products2.webp" alt="healthy-products">
+            <div class="header-bg__rectangle">
+                <h1 class="header-bg__slogan">
+                    <b><em>Полезно &mdash; значит вкусно!</em></b>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-offset_empty"></div>
+        <div class="main-container">
+            <div class="center-container">
+                <h1 class="main-container__title share-recipe">
+                    <b>Поделиться своим рецептом</b>
+                </h1>
+                <form action="#" method="get" class="main-container__addition-form addition-form" id="form">
+                    <div class="addition-form__row">
+                        <div class="addition-form__form-item form-item">
+                            <div class="form-item__box parameter__box__photo input-box">
+                                <p class="form-item__text">Фото готового блюда</p>
+                                <p class="form-item__text form-item__text__photo">Загрузить фото</p>
+                                <label class="parameter__label__photo" for="photo"></label>
+                                <input class="parameter__input__photo" type="file" id="photo" name="photo" accept="image/png, image/jpeg, image/jpg, image/webp">
+                            </div>
+                        </div>
+                        <div class="addition-form__column">
+                            <div class="addition-form__form-item form-item form-item__column__left">
+                                <p class="form-item__text">Название рецепта:</p>
+                                <div class="form-item__box parameter__box input-box">
+                                    <input class="parameter__input" type="text" name="name" placeholder="Введите название" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="parameter__row">
+                                <div class="addition-form__form-item form-item form-item__column__center">
+                                    <p class="form-item__text">Время приготовления:</p>
+                                    <div class="form-item__short-space">
+                                        <div class="form-item__box form-item__box__short parameter__box input-box">
+                                            <input class="parameter__input parameter__input__short" type="number" name="timemin" min="0" max="24" step="1" value="0" required>
+                                        </div>
+                                        <p class="form-item__small-text">ч</p>
+                                        <div class="form-item__box form-item__box__short parameter__box input-box">
+                                            <input class="parameter__input parameter__input__short" type="number" name="timeh" min="0" max="59" step="1" value="0" required>
+                                        </div>
+                                        <p class="form-item__small-text">мин</p>
+                                    </div>
+                                </div>
+                                <div class="addition-form__form-item form-item form-item__column__center">
+                                    <p class="form-item__text text__long">Количество порций:</p>
+                                    <p class="form-item__text text__short">Кол-во порций:</p>
+                                    <div class="form-item__box form-item__box__short parameter__box input-box">
+                                        <input class="parameter__input parameter__input__short" type="number" name="count" min="1" max="24" step="1" value="1" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addition-form__form-item form-item">
+                                <p class="form-item__text text__long">Категория блюда:</p>
+                                <p class="form-item__text text__short">Категория:</p>
+                                <div class="form-item__box parameter__box input-box" data-state="">
+                                    <div class="parameter__input parameter__select" data-state="">
+                                        <div class="select__title" data-default="Выберите категорию">Выберите категорию</div>
+                                        <div class="parameter__options">
+                                            <label class="parameter__option" for="snacks">Закуски</label>
+                                            <input class="parameter__choice" id="snacks" value="snacks" type="radio" name="category" required>
+                                            <label class="parameter__option" for="salads">Салаты</label>
+                                            <input class="parameter__choice" id="salads" value="salads" type="radio" name="category">
+                                            <label class="parameter__option" for="soups">Супы</label>
+                                            <input class="parameter__choice" id="soups" value="soups" type="radio" name="category">
+                                            <label class="parameter__option" for="fish">Рыбные блюда</label>
+                                            <input class="parameter__choice" id="fish" value="fish" type="radio" name="category">
+                                            <label class="parameter__option" for="meat">Мясные блюда</label>
+                                            <input class="parameter__choice" id="meat" value="meat" type="radio" name="category">
+                                            <label class="parameter__option" for="garnish">Гарниры</label>
+                                            <input class="parameter__choice" id="garnish" value="garnish" type="radio" name="category">
+                                            <label class="parameter__option" for="desserts">Десерты</label>
+                                            <input class="parameter__choice" id="desserts" value="desserts" type="radio" name="category">
+                                            <label class="parameter__option" for="drinks">Напитки</label>
+                                            <input class="parameter__choice" id="drinks" value="drinks" type="radio" name="category">
+                                            <label class="parameter__option" for="kids">Детское меню</label>
+                                            <input class="parameter__choice" id="kids" value="kids" type="radio" name="category">
+                                        </div>
+                                    </div>
+                                    <img class="parameter__icon" src="images/icons/angle-down-dark.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addition-form__column">
+                        <div class="addition-form__form-item form-item form-item__column__left">
+                            <p class="form-item__text">Необходимые ингредиенты:</p>
+                            <div class="form-item__column">
+                                <div class="form-item__box parameter__box input-box">
+                                    <div class="input__long vert-line-after">
+                                        <input class="parameter__input" type="text" name="ingredientname" placeholder="Название ингрдиента" autocomplete="off" required>
+                                    </div>
+                                    <div class="input__short vert-line-after">
+                                        <input class="parameter__input" type="number" name="ingredientquantity" min="0.1" max="999" placeholder="Кол-во" required>
+                                    </div>
+                                    <div class="parameter__input parameter__select parameter__input__short input__short" data-state="">
+                                        <div class="select__title" data-default="Ед.изм.">Ед.изм.</div>
+                                        <div class="parameter__options">
+                                            <label class="parameter__option" for="g">г</label>
+                                            <input class="parameter__choice" id="g" value="g" type="radio" name="ingredientmes" required>
+                                            <label class="parameter__option" for="kg">кг</label>
+                                            <input class="parameter__choice" id="kg" value="kg" type="radio" name="ingredientmes">
+                                            <label class="parameter__option" for="l">л</label>
+                                            <input class="parameter__choice" id="l" value="l" type="radio" name="ingredientmes">
+                                            <label class="parameter__option" for="ml">мл</label>
+                                            <input class="parameter__choice" id="ml" value="ml" type="radio" name="ingredientmes">
+                                            <label class="parameter__option" for="teas">ч. л.</label>
+                                            <input class="parameter__choice" id="teas" value="teas" type="radio" name="ingredientmes">
+                                            <label class="parameter__option" for="tables">ст. л.</label>
+                                            <input class="parameter__choice" id="tables" value="tables" type="radio" name="ingredientmes">
+                                            <label class="parameter__option" for="piece">шт</label>
+                                            <input class="parameter__choice" id="piece" value="piece" type="radio" name="ingredientmes">
+                                            <label class="parameter__option" for="glass">стак.</label>
+                                            <input class="parameter__choice" id="glass" value="glass" type="radio" name="ingredientmes">
+                                        </div>
+                                    </div>
+                                    <img class="parameter__icon" src="images/icons/angle-down-dark.png">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="ingredients-form__button button" type="button">
+                            <p>Добавить</p>
+                        </button>
+                        <template id="ingredients">
+                            <div class="addition-form__ingredients-preview ingredients__wrapper">
+                                <div class="ingredients__title">
+                                    <p>Ингредиенты:</p>
+                                </div>
+                                <ul class="ingredients__list"></ul>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="addition-form__form-item form-item instruction-form">
+                        <p class="instruction-form__title">Пошаговая инструкция приготовления</p>
+                        <template id="description">
+                            <div class="form-item__description">
+                                <p class="description__title"></p>
+                                <div class="parameter__box parameter__box__textarea input-box">
+                                    <textarea class="parameter__input parameter__input__textarea" placeholder="Описание шага"></textarea>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="addition-form__row__center">
+                        <button class="addition-form__button button__pale save" type="button">
+                            <p>Сохранить</p>
+                        </button>
+                        <button class="addition-form__button button__pale reset" type="reset">
+                            <p>Очистить</p>
+                        </button>
+                    </div>
+                    <button class="addition-form__button button" type="submit">
+                        <p>Отправить рецепт</p>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="center-container">
+                <div class="footer-container__contacts contacts">
+                    <div class="contacts__text">
+                        <p class="contacts__header">
+                            <i>С заботой о Вашем здоровье:</i>
+                        </p>
+                        <p class="contacts__item">
+                            &copy; &quot;HealthyFoodBook&quot;, 2023
+                        </p>
+                        <p class="contacts__item">
+                            Официальный представитель:
+                        </p>
+                        <p class="contacts__item">
+                            Шиляева Надежда Сергеевна
+                        </p>
+                        <p class="contacts__item">
+                            Телефон: +7 (922) 521-61-51
+                        </p>
+                        <p class="contacts__item">
+                            E-mail: shilaeva5nadya@mail.ru
+                        </p>
+                    </div>
+                    <div class="contacts__lables contact-lables">
+                        <div class="contact-lables__item">
+                            <a class="contact-lables__link" href="https://t.me/NadezhdaShilaeva">
+                                <img class="contact-lables__img" src="images/footer-icons/telegram-icon.png" alt="Telegram">
+                            </a>
+                        </div>                
+                        <div class="contact-lables__item">
+                            <a class="contact-lables__link" href="https://vk.com/id146617368">
+                                <img class="contact-lables__img" src="images/footer-icons/vk-icon.png" alt="VK">
+                            </a>
+                        </div>                
+                        <div class="contact-lables__item">
+                            <a class="contact-lables__link" href="https://wa.me/qr/UCTXNQEMSXOWD1">
+                                <img class="contact-lables__img" src="images/footer-icons/whatsapp-icon.png" alt="WhatsApp">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/header-navigation.js"></script>
+    <script src="js/enter_prevent_default.js"></script>
+    <script src="js/photo-form.js"></script>
+    <script type="module" src="js/parameter__select.js"></script>
+    <script type="module" src="js/instruction-form.js"></script>
+    <script type="module" src="js/ingredients-form.js"></script>
+    <script type="module" src="js/save_data.js"></script>
+</body>
+</html>

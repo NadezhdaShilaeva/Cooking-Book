@@ -48,3 +48,28 @@
 .contact-lables__img {
     width: 40px;
 }
+
+@media (max-width: 630px) {
+    .contacts__header {
+        font-size: 16px;
+    }
+    .contacts__item {
+        font-size: 14px;
+    }
+    .contact-lables__item {
+        padding: 5px;
+    }
+    .contacts__lables {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .contact-lables__img {
+        width: 34px;
+    }
+}
+
+@media (max-width: 440px) {
+    .footer-container {
+        width: 440px;
+    }
+}
