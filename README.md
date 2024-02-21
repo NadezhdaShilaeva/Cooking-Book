@@ -1,4 +1,6 @@
-# Web-3sem
+# Cooking Book
+
+###### Проект по web-программированию
 
 Cooking Book
 
